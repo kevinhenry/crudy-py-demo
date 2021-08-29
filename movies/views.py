@@ -17,7 +17,6 @@ class MovieCreateView(CreateView):
     template_name = "movie_create.html"
     model = Movie
     fields = ["name", "description", "owner"]
-    success_url = reverse_lazy("movie_list")
 
 
 class MovieUpdateView(UpdateView):
